@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="imgs/logopizza.jpg">  
+    <script src="js/pedido.js"></script>
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Pizzaria Soarito</title>
+</head>
+
+<body>
+    <header>
+      <h1>Pizzaria Soarito</h1>
+</header>
+
+<div class="um">
+
+   <div id="cliente">
+    <p>Digite o nome para constar no pedido</p>
+    <input type="text" name="name" id="name" class="input" placeholder="Nome Completo">
+    <br>
+    <input type="text" name="endereco" id="endereco" class="input" placeholder="Endereço">
+    <br>
+    <button onclick="cliente()">Confirmar Cadastro</button>
+    
+ 
+    </div>
+    
+    <br><br>
+
+    <div id="imgs">
+    <p>Escolha o tamanho da sua pizza:</p>
+    <img src="imgs/25cm.png" alt="imgpequena" height="170px">
+    <img src="imgs/35cm.png" alt="imgmedia" height="170px">
+    <img src="imgs/45cm.png" alt="imggrande" height="170px">
+    </div>
+
+
+    <div id="tamanhos">
+        <input id="pequena" type="checkbox" value="Pequena"> pequena R$35 (1 sabor)    
+        <input id="media" type="checkbox" value="Media"> média R$45 (2 sabores)
+        <input id="grande" type="checkbox" value="Grande"> grande R$55 (4 sabores)
+        <br>
+        <button onclick="pizzaTamanho()">Confirmar Tamanho</button>
+    </div>
+
+    <br> <br>
+
+    <div id="sabores">
+        <p>Escolha o(s) sabor(es) da sua pizza:</p>
+        <input type="checkbox" id="frango" value="Frango"> Frango
+        <input type="checkbox" id="calabresa" value="Calabresa"> Calabresa
+        <input type="checkbox" id="milho" value="Milho"> Milho
+        <input type="checkbox" id="bacon" value="Bacon"> Bacon
+        <input type="checkbox" id="queijo" value="Queijo"> Queijo
+        <input type="checkbox" id="presunto" value="Presunto"> Presunto
+        <br>
+        <button onclick="pizzaSabor()">Confirmar Sabor(s)</button>
+    </div>
+
+    <br> <br>
+
+    <div id="adicionais">
+        <p>Escolha um adicional para a pizza:</p>
+        <input type="checkbox" id="nenhum" value="Nenhum"> Nenhum
+        <input type="checkbox" id="borda" value="Borda Recheada"> Borda Recheada(R$5,00)
+        <input type="checkbox" id="milho" value="Milho Extra"> Milho Extra(R$5,00)
+        <input type="checkbox" id="ervilha" value="Ervilha Extra"> Ervilha Extra(R$5,00)
+        <input type="checkbox" id="cebola" value="Cebola Extra"> Cebola Extra(R$5,00)
+        <br>
+        <button onclick="pizzaAdicionais()">Confirmar Adicional</button>
+    </div>
+
+    <br> <br>
+
+    <div id="bebidas">
+        <p>Escolha sua bebida:</p>
+        <input type="checkbox" id="nenhum" value="Nenhum"> Nenhum
+        <input type="checkbox" id="coca" value="Coca-Cola 2L"> Coca-Cola 2 Litros (R$10)
+        <input type="checkbox" id="pepsi" value="Pepsi 2L"> Pepsi 2 Litros (R$10)
+        <input type="checkbox" id="guarana" value="Guaraná 2L"> Guaraná 2 Listros (R$10)
+        <input type="checkbox" id="energetico" value="Red-Bull 2L"> Energetico Red-Bull 2 Litros (R$10)
+        <br>
+        <button onclick="pizzaBebidas()">Confirmar Bebida</button>
+    </div>
+
+    <br> <br>
+
+
+    <div id="retirada">
+        <p>Escolha sua forma de entrega:</p>
+        <input type="checkbox" id="balcao" value="Balcao"> Balcão
+        <input type="checkbox" id="entrega" value="Entrega em Casa"> Entregue em casa(R$10)
+        <br>
+        <button onclick="entrega()">Confirmar</button>
+    </div>
+
+    <br> <br>
+
+    <a class="botaoConfirma" href="confirma.html"><button>Confirmar <br> Pedido</button></a>
+</div>
+</body>
+</html>

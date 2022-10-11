@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/confirma.js"></script>
+    <link rel="stylesheet" href="CSS/confirma.css">
+    <link rel="icon" href="imgs/logopizza.jpg">
+    <title>Pizzaria Soarito</title>
+</head>
+<body onload="clienteInformacao()">
+    <br>
+    <div class="cliente">
+        <h3>Cliente</h3>
+        <label>Nome:</label>
+        <p id="nomeCliente"></p>
+        <br>
+        <label>Endereco:</label>
+        <p id="enderecoCliente"></p>
+    </div>
+
+    <br> <br>
+    <button onclick="pizzaPedido()">Mostrar Pedido</button>
+    <br> <br>
+    <div class="pizza">
+        <h3>Pedido</h3>
+        <label>Tamanho:</label>
+        <p id="tamanho"></p>
+        <br>
+        <label>Sabor(s):</label>
+        <p id="sabores"></p>
+        <br>
+        <label>Adicional:</label>
+        <p id="adicional"></p>
+        <br>
+        <label>Bebida:</label>
+        <p id="bebida"></p>
+        <br>
+        <label>Entrega:</label>
+        <p id="retirada"></p>
+        <br>
+        <label>Valor Total:</label>
+        <h2 id="valorTotal"></h2>
+    </div>
+</body>
+</html>
